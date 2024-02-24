@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- FONTAWESOME/STYLESHEET  -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a125926967.js" crossorigin="anonymous"></script>
+    <title> Billings and Payments </title>
+
+</head>
+<body>
+
+    <!-- NAV BAR -->
+<div class="nav">
+    <a href="#"> <img src="notxt.png" class="logo"> </a>
+<div class="searchbar">
+    <input type="text" placeholder="Search" class="searchbox">
+    <button type="submit"><i class="fa fa-search"></i></button>
+</div>
+</div>
+
+<!-- SIDE BAR -->
+<!-- enter code here -->
+
+        <!-- BILLING DETAILS -->
+
+<h1 class="header"> Billings & Payments </h1>
+
+<div class="container">
+    <form action="connect.php" method="post">
+        <div class="row">
+            <div class="col">
+
+                <div class="inputBox">
+                    <label class="required" for="name"> First Name </label>
+                    <input type="text" placeholder="John" name="f_name">
+                </div>
+                <div class="inputBox">
+                    <label class="required" for="name"> Last Name </label>
+                    <input type="text" placeholder="Appleseed" name="l_name">
+                </div>
+                <div class="inputBox">
+                    <label class="required" for="name"> Email </label>
+                    <input type="email" placeholder="example@example.com" name="email">
+                </div>
+                <div class="inputBox">
+                    <label class="required" for="zipcode"> Mode of Payment </label>
+                    <select name="mop" id="modepay">
+                        <option name="payment" value="gcash">G-Cash</option>
+                        <option name="payment" value="paymaya">Paymaya</option>
+                        <option name="payment" value="paypal">Paypal</option>
+                        <option name="payment" value="cash">Cash</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <label class="required" for="name"> House Address </label>
+                    <input type="text" placeholder="" name="houseadd">
+                </div>
+                <div class="inputBox">
+                    <label class="required" for="city"> City </label>
+                <input type="dropdown" placeholder="" name="city">
+                </div>
+                <div class="flex">
+                    <div class="inputBox">
+                        <label class="required" for="barangay"> Barangay </label>
+                        <input type="text" placeholder="" name="barangay">
+                    </div>
+                    <div class="inputBox">
+                        <label class="required" for="zipcode"> Zipcode </label>
+                        <input type="text" placeholder="1234" name="zipcode">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+
+            <div class="display">
+                
+            </div>
+
+            <input type="submit" value="Proceed" class="submit-btn">
+            <input type="submit" value="Print" class="print-btn">
+            <input type="submit" value="Export PDF" class="export-btn">
+
+    </form>
+
+</div>    
+    
+</body>
+</html>
