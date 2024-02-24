@@ -1,0 +1,197 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+  color: #282828;
+  overflow: hidden;
+}
+
+.nav{
+
+    background-color: #a0cfde;
+    margin: 0px;
+    padding: -5px 25px 10px 25px;
+}
+
+.logo,  a {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    width: 55px;
+    left: 350px;
+    top: 5px;
+}
+
+
+.searchbox {
+    position: absolute;
+    left: 1300px;
+    top: 20px;
+    border-radius: 40px;
+    padding: 5px 10px;
+    border: 1px solid #282828;
+    background-color: white;
+}
+
+.fa-search {
+    position: absolute;
+    z-index: 0;
+    left: 1449px;
+    top: 20px;
+    border-radius: 50px;
+    padding: 6.5px 10px;
+    border: 1px solid #282828;
+    background-color: #f9c7b3;
+}
+
+button {
+    z-index: 0;
+    left: 1449px;
+    top: 20px;
+}
+
+.header {
+    position: relative;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+    color: #81b1c1;
+}
+
+.required::after {
+    content: "*";
+    color: red;
+}
+
+.submit-btn {
+    position: relative;
+    top: 20px;
+}
+
+.print-btn {
+  position: relative;
+  top: 20px;
+}
+
+.export-btn {
+  position: relative;
+  top: 20px;
+}
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  min-height: 89vh;
+}
+
+.container form{
+  padding:20px;
+  width:900px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+  margin: 15px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .submit-btn{
+  width: 30%;
+  padding: 12px;
+  font-size: 17px;
+  background-color: #a0cfde;
+  color:#282828;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.container form .print-btn{
+  width: 30%;
+  padding:12px;
+  font-size: 17px;
+  background-color: #a0cfde;
+  color:#282828;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.container form .export-btn{
+  width: 37.6%;
+  padding: 12px;
+  font-size: 17px;
+  background-color: #a0cfde;
+  color:#282828;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.container form .submit-btn:hover{
+  background: #a0cfde;
+}
+
+.display{
+    position: relative;
+    width: 500px;
+    height: 445px;
+    top: 10px;
+    background-color: #f9c7b3;
+    border-radius: 0px;
+}
+
+.container form .row .col .inputBox select{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+  align-items: center;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+}
