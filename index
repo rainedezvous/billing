@@ -48,11 +48,11 @@
                 </div>
                 <div class="inputBox">
                     <label class="required" for="zipcode"> Mode of Payment </label>
-                    <select name="mop" id="modepay">
-                        <option name="payment" value="gcash">G-Cash</option>
-                        <option name="payment" value="paymaya">Paymaya</option>
-                        <option name="payment" value="paypal">Paypal</option>
-                        <option name="payment" value="cash">Cash</option>
+                    <select name="mop" id="mop">
+                        <option name="mop" value="gcash">G-Cash</option>
+                        <option name="mop" value="paymaya">Paymaya</option>
+                        <option name="mop" value="paypal">Paypal</option>
+                        <option name="mop" value="cash">Cash</option>
                     </select>
                 </div>
                 <div class="inputBox">
@@ -60,17 +60,17 @@
                     <input type="text" placeholder="" name="houseadd">
                 </div>
                 <div class="inputBox">
-                    <label class="required" for="city"> City </label>
-                <input type="dropdown" placeholder="" name="city">
+                    <label class="required" for="total_amount"> Total Amount </label>
+                <input type="dropdown" placeholder="" name="total_amount">
                 </div>
                 <div class="flex">
                     <div class="inputBox">
-                        <label class="required" for="barangay"> Barangay </label>
-                        <input type="text" placeholder="" name="barangay">
+                        <label class="required" for="date_created"> Date Created </label>
+                        <input type="date" name="date_created"> 
                     </div>
                     <div class="inputBox">
-                        <label class="required" for="zipcode"> Zipcode </label>
-                        <input type="text" placeholder="1234" name="zipcode">
+                        <label class="required" for="date_paid"> Date Paid </label>
+                        <input type="date" name="date_paid"> 
                     </div>
                 </div>
             </div>
@@ -82,12 +82,14 @@
             </div>
 
             <input type="submit" value="Proceed" class="submit-btn">
-            <input type="submit" value="Print" class="print-btn">
+            <input type="submit" value="Print" class = "print-btn" onclick="printInvoice()">
             <input type="submit" value="Export PDF" class="export-btn">
 
     </form>
 
 </div>    
+
+<script src = "script.js"></script>
     
 </body>
 </html>
