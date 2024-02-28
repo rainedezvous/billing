@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- FONTAWESOME/STYLESHEET  -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a125926967.js" crossorigin="anonymous"></script>
+    <title> Billings and Payments </title>
+
+</head>
+<body>
+
+ <!-- NAV BAR -->
+ <div class="nav">
+    <a href="" class="navlinks-menu"></a>
+    <a href="" class="navlinks"></a>
+    <div class="search-div-nav">
+        <button class="search-btn" type="submit">
+        </button>
+        <input type="text" placeholder="Search.." class="searchbox">
+    </div>
+</div>
+
+ <!-- SIDE NAV BAR -->
+<div class="c-sidenavbar">
+    <a href="#" class="side-panel-button" style="text-decoration:none">
+        <div class="side-panel-ctr-img"><img
+            src="assets/user.png"
+            loading="lazy" width="45"
+            alt="user icon"
+            class="side-panel-image-icon">
+        </div>
+        <div class="sidepanel-img-text">
+            <div class="side-text-block">Profile</div>
+        </div>
+    </a>
+
+
+    <a href="#" class="side-panel-button" style="text-decoration:none">
+        <div class="side-panel-ctr-img"><img
+            src="assets/dashboard.png"
+            loading="lazy" width="45"
+            alt="dashboard icon"
+            class="side-panel-image-icon">
+        </div>
+        <div class="sidepanel-img-text">
+            <div class="side-text-block">Dashboard</div>
+        </div>
+    </a>
+    
+              
+    <a href="#" class="side-panel-button" style="text-decoration:none">
+        <div class="side-panel-ctr-img"><img
+            src="assets/courses.png"
+            loading="lazy" width="50"
+            alt="courses icon"
+            class="side-panel-image-icon">
+        </div>
+        <div class="sidepanel-img-text">
+            <div class="side-text-block">Courses</div>
+        </div>
+    </a>
+        
+    <a href="#" class="side-panel-button" style="text-decoration:none">
+        <div class="side-panel-ctr-img"><img
+            src="assets/calendar.png"
+            loading="lazy" width="50"
+            alt="calendar icon"
+            class="side-panel-image-icon">
+        </div>
+        <div class="sidepanel-img-text">
+            <div class="side-text-block">Calendar</div>
+        </div>
+    </a>
+
+
+    <a href="#" class="side-panel-button" style="text-decoration:none">
+        <div class="side-panel-ctr-img"><img
+            src="assets/report-card.png"
+            loading="lazy" width="60"
+            alt="report-card icon"
+            class="side-panel-image-icon">
+        </div>
+        <div class="sidepanel-img-text">
+            <div class="side-text-block">Reports</div>
+        </div>
+    </a>
+
+
+    <a href="#" class="side-panel-button" style="text-decoration:none">
+        <div class="side-panel-ctr-img"><img
+            src="assets/inbox-mail.png"
+            loading="lazy" width="55"
+            alt="inbox-mail icon"
+            class="side-panel-image-icon">
+        </div>
+        <div class="sidepanel-img-text">
+            <div class="side-text-block">Inbox</div>
+        </div>
+    </a>
+
+
+    <a href="#" class="side-panel-button" style="text-decoration:none">
+        <div class="side-panel-ctr-img"><img
+            src="assets/question-mark.png"
+            loading="lazy" width="65"
+            alt="help icon"
+            class="side-panel-image-icon">
+        </div>
+        <div class="sidepanel-img-text">
+            <div class="side-text-block">Help</div>
+        </div>
+    </a>
+
+
+        <!-- BILLING DETAILS -->
+
+<h1 class="header"> Billings & Payments </h1>
+
+<div class="container">
+    <form action="connect.php" method="post">
+        <div class="row">
+            <div class="col">
+
+                <div class="inputBox">
+                    <label class="required" for="name"> First Name </label>
+                    <input type="text" placeholder="John" name="f_name">
+                </div>
+                <div class="inputBox">
+                    <label class="required" for="name"> Last Name </label>
+                    <input type="text" placeholder="Appleseed" name="l_name">
+                </div>
+                <div class="inputBox">
+                    <label class="required" for="name"> Email </label>
+                    <input type="email" placeholder="example@example.com" name="email">
+                </div>
+                <div class="inputBox">
+                    <label class="required" for="zipcode"> Mode of Payment </label>
+                    <select name="mop" id="mop">
+                        <option name="mop" value="gcash">G-Cash</option>
+                        <option name="mop" value="paymaya">Paymaya</option>
+                        <option name="mop" value="paypal">Paypal</option>
+                        <option name="mop" value="cash">Cash</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <label class="required" for="name"> House Address </label>
+                    <input type="text" placeholder="" name="houseadd">
+                </div>
+                <div class="inputBox">
+                    <label class="required" for="total_amount"> Total Amount </label>
+                <input type="dropdown" placeholder="" name="total_amount">
+                </div>
+                <div class="flex">
+                    <div class="inputBox">
+                        <label class="required" for="date_created"> Date Created </label>
+                        <input type="date" name="date_created"> 
+                    </div>
+                    <div class="inputBox">
+                        <label class="required" for="date_paid"> Date Paid </label>
+                        <input type="date" name="date_paid"> 
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+
+            <div class="display">
+                
+            </div>
+
+            <input type="submit" value="Proceed" class="submit-btn">
+            <input type="submit" value="Print" class = "print-btn" onclick="printInvoice()">
+            <input type="submit" value="Export PDF" class="export-btn">
+
+    </form>
+
+</div>    
+
+<script src = "script.js"></script>
+    
+</body>
+</html>
