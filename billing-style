@@ -1,0 +1,326 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  transition: all .2s linear;
+  color: #282828;
+}
+
+p::before {
+font-family: "Font Awesome\ 5 Free";
+display: inline-block;
+padding-right: 3px;
+font-weight: 900;
+content: "\f00c";
+}
+
+/*======Whole Page======*/
+
+input[type="text"] {
+font-size: 11px;
+}
+
+img {
+display: block;
+}
+
+.body {
+max-height: 1080px;
+max-width: 1920px;
+min-height: 768px;
+min-width: 1024px;
+aspect-ratio: 16/9;
+mix-blend-mode: normal;
+object-fit: contain;
+display: flex;
+}
+
+::placeholder {
+font-size: 12px;
+}
+
+.show {
+visibility: visible;
+opacity: 1;
+}
+
+/*======Top Navigation Bar======*/
+.nav {
+display: flex;
+background-color: #a0cfde;
+flex-flow: row wrap;
+justify-content: space-between;
+position: absolute;
+right: 0%;
+left: 0%;
+height: 90px;
+}
+
+/*===== OIKOS LOGO BUTTON =====*/
+.navlinks {
+background-color: #a0cfde00;
+width: 100px;
+height: 80px;
+margin-left: 120px;
+margin-top: 5px;
+background-image: url("assets/Oikos House.png");
+background-repeat: no-repeat;
+background-position: center;
+background-size: 90px;
+border: none;
+cursor: pointer;
+}
+
+/*===== OIKOS MENU BUTTON =====*/
+.navlinks-menu {
+background-color: #a0cfde00;
+width: 55px;
+height: 70px;
+margin-left: 20px;
+margin-top: 20px;
+height: 50px;
+cursor: pointer;
+border: none;
+background-image: url("assets/menu.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: 40px;
+}
+
+.logo-menu {
+position: auto;
+}
+
+.search-div-nav {
+margin-right: 30px;
+height: 90px;
+display: flex;
+}
+
+.searchbox {
+border-radius: 40px;
+margin-bottom: 28px;
+margin-top: 28px;
+padding-right: 100px;
+padding-left: 10px;
+border: 1px solid #282828;
+background-color: #f7d6a1;
+}
+
+.search-btn {
+width: 35px;
+background-color: #f7d6a1;
+margin-bottom: 28px;
+margin-top: 28px;
+margin-right: 20px;
+border-radius: 90px;
+padding-left: 25px;
+background-image: url("assets/search-icon.png");
+background-size: 20px;
+background-position: center;
+background-repeat: no-repeat;
+border: 1px solid #282828;
+cursor: pointer;
+}
+
+.search-btn:hover {
+background-color: #f6e2cb;
+}
+
+.search-btn:active {
+background-color: #81b1c1;
+}
+
+
+/*======Side Navigation Bar======*/
+.c-sidenavbar {
+width: 5%;
+background-color: #f7d6a1;
+margin-top: 90px;
+position: absolute;
+flex-direction: column;
+padding: 5px;
+height: 730px;
+display: flex;
+}
+
+.side-panel-ctr-img {
+margin-top: 10px;
+}
+
+.sidepanel-img-text {
+margin-top: 5px;
+margin-bottom: 10px;
+}
+
+.side-text-block {
+text-align: center;
+font-size: 13px;
+}
+
+.side-panel-image-icon {
+margin-left: auto;  
+margin-right: auto;
+width: 30px;
+}
+
+/*Side Panel Buttons*/
+.side-panel-button {
+margin-top: 3px;
+background-color: #00000000;
+border-color: #00000000;
+
+}
+
+.side-panel-button:hover {
+cursor: pointer;
+background-color: #f6e2cb;
+}
+
+.side-panel-button:active {
+cursor: pointer;
+background-color: #81b1c1;
+}
+
+/** CONTENT **/
+
+.header {
+    position: absolute;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 650px;
+    top: 30px;
+    color: #81b1c1;
+}
+
+.required::after {
+    content: "*";
+    color: red;
+}
+
+.submit-btn {
+    position: relative;
+    top: 20px;
+}
+
+.print-btn {
+  position: relative;
+  top: 20px;
+}
+
+.export-btn {
+  position: relative;
+  top: 20px;
+}
+
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  min-height: vh;
+  left: 730px;
+  bottom: 400px;
+}
+
+.container form{
+  padding:20px;
+  width: 900px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+  margin: 15px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .submit-btn{
+  width: 30%;
+  padding: 12px;
+  font-size: 17px;
+  background-color: #a0cfde;
+  color:#282828;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.container form .print-btn{
+  width: 30%;
+  padding:12px;
+  font-size: 17px;
+  background-color: #a0cfde;
+  color:#282828;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.container form .export-btn{
+  width: 37.6%;
+  padding: 12px;
+  font-size: 17px;
+  background-color: #a0cfde;
+  color:#282828;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.container form .submit-btn:hover{
+  background: #a0cfde;
+}
+
+.display{
+    position: relative;
+    width: 500px;
+    height: 445px;
+    top: 10px;
+    background-color: #f9c7b3;
+    border-radius: 0px;
+}
+
+.container form .row .col .inputBox select{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+  align-items: center;
+  appearance: none;
+}
